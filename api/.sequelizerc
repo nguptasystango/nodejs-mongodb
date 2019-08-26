@@ -1,0 +1,12 @@
+/** 
+  * File name: 
+  * Description: In this file, we are going to be specifying the paths to 
+  *              files required by Sequelize.  
+*/ 
+const path = require('path'); 
+module.exports = {
+  "config": path.resolve('./database/config', 'config.json'),
+  "models-path": path.resolve('./database/models'),
+  "seeders-path": path.resolve('./database/seeders'),
+  "migrations-path": path.resolve('./database/migrations')
+};
